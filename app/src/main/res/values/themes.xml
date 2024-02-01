@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GoogleAssistantClone" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.GoogleAssistantClone" parent="Base.Theme.GoogleAssistantClone" />
+
+    <!-- res/values/styles.xml -->
+
+        <!-- Base application theme -->
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+        </style>
+
+
+
+    <style name="chips">
+        <item name="android:textSize">
+            15sp
+        </item>
+        <item name="android:letterSpacing">
+            0.02
+        </item>
+        <item name="android:textColor">
+            @color/black
+        </item>
+        <item name="fontFamily">
+            @font/montserrat
+        </item>
+        <item name="backgroundTint">
+            @color/white
+        </item>
+    </style>
+
+</resources>

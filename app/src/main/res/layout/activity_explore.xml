@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".assistant.ExploreActivity"
+    android:orientation="vertical">
+    
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/greetings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good Morning!"
+            tools:ignore="HardcodedText"
+            android:textStyle="bold"
+            android:fontFamily="@font/amaranth"
+            android:textSize="30sp"
+            android:textColor="@color/black">
+
+        </TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Today"
+        tools:ignore="HardcodedText"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black">
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/weather_card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        app:cardMaxElevation="300dp"
+        app:cardCornerRadius="70dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:elevation="300dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/weather_gradient">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/weather">
+
+            </ImageView>
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="0dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get Temperature Here"
+                    tools:ignore="HardcodedText"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get Description"
+                    tools:ignore="HardcodedText"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textSize="20sp"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Try it Out"
+        tools:ignore="HardcodedText"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="30sp"
+        android:textColor="@color/black">
+        
+
+    </TextView>
+    
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:id="@+id/chips_commands">
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </ScrollView>
+
+</LinearLayout>
